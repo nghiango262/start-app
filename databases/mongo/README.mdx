@@ -1,0 +1,24 @@
+# MongoDB
+- mongod
+- mongos
+-
+
+## mongod
+- là tiến trình chính của hệ thống MongoDB. Nó xử lý các yêu cầu về dữ liệu, quản lý truy xuất dữ liệu, và thực hiện các hoạt động chạy background.
+- Ta có 2 option sử dụng công cụ mongod: option dùng lệnh và dùng file cấu hình
+  - 1. Thường dùng những lệnh liên quan đến mongod để phục vụ việc testing.
+  - 2. trong những hoạt động chung, thường sử dụng cấu hình dạng file để kiểm soát hoạt đọng của db
+
+- ```
+  --logpath <path>
+  ```
+  chỉ ra đường dẫn file ghi log
+
+- ```
+  --fork
+  ```
+  Bật chế độ chạy background cho tiến trình mongod.
+  Mặc định thì mongod không chạy dưới dạng daemo. và thuơng bạn sẽ run mongod dưới dạng daemon.
+  Bàng cách sử dụng --fork
+  
+-
